@@ -5,7 +5,6 @@
   import InitiativeCard from "./lib/InitiativeCard.svelte";
   import { playDiceSound } from "./lib/Sound";
   import Switch from "./lib/Switch.svelte";
-  import TailwindCss from "./lib/TailwindCSS.svelte";
   import type { Card, Player } from "./lib/types";
   import { range, shuffle } from "./lib/util";
 
@@ -54,8 +53,6 @@
     );
   }
 </script>
-
-<TailwindCss />
 
 <main>
   <div class="flex flex-row" style="border: solid;">
