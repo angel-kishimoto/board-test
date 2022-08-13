@@ -1,41 +1,16 @@
 <script lang="ts">
   import Board from "./lib/Board.svelte";
-  import Card from "./lib/Card.svelte";
+  import DraggableCard from "./lib/DraggableCard.svelte";
   import Initiative from "./lib/Initiative.svelte";
   import InitiativeCard from "./lib/InitiativeCard.svelte";
   import { playDiceSound } from "./lib/Sound";
   import Switch from "./lib/Switch.svelte";
+  import TailwindCss from "./lib/TailwindCSS.svelte";
+  import type { Card, Player } from "./lib/types";
   import { range, shuffle } from "./lib/util";
 
-  // move into app store
-  type Player = {
-    name: string;
-    selected: boolean;
-  };
-  type Card = {
-    left: number;
-    top: number;
-  };
-  const newPlayer = (name: string): Player => ({
-    name: name,
-    selected: false,
-  });
-
-  let players: Array<Player> = [
-    "test 1",
-    "test 2",
-    "test 3",
-    "test 4",
-    "fight",
-  ].map(newPlayer);
-
-  const shufflePlayer = () => {
-    let selected = players.filter((p) => p.selected);
-    let nonSelected = players.filter((p) => !p.selected);
-    players = [...shuffle(selected), ...nonSelected];
-    playDiceSound();
-  };
-  let cards: Array<Card> = [];
+  let players: Player[] = [];
+  let cards: Card[] = [];
 
   // maybe seperate in some other file?
   const [cardWidth, cardHeight] = [100, 60];
@@ -46,34 +21,57 @@
     event.preventDefault();
   });
 
+  // for button
+  const shufflePlayer = () => {
+    let selected = players.filter((p) => p.selected);
+    let nonSelected = players.filter((p) => !p.selected);
+    players = [...shuffle(selected), ...shuffle(nonSelected)];
+    playDiceSound();
+  };
+
   // these are just for calculating card initial position
   {
     const [cols, rows] = [6, 6];
     const [dX, dY] = [boardWidth / cols, boardHeight / rows];
     const [offsetX, offsetY] = [(dX - cardWidth) / 2, (dY - cardHeight) / 2];
 
-    range(cols)
+    cards = range(cols)
       .map((col) => range(rows).map((row) => [col, row]))
       .flat()
-      .forEach(([col, row]) =>
-        cards.push({
-          left: Math.round(col * dX + offsetX),
-          top: Math.round(row * dY + offsetY),
-        })
-      );
+      .map(([col, row]) => ({
+        left: Math.round(col * dX + offsetX),
+        top: Math.round(row * dY + offsetY),
+      }));
+  }
+
+  // these are just for calculating player initial
+  {
+    players = ["baaka", "test 1", "test 2", "test 3", "test 4", "fight"].map(
+      (name) => ({
+        name: name,
+        selected: false,
+      })
+    );
   }
 </script>
 
+<TailwindCss />
+
 <main>
-  <div class="container" style="border: solid;">
+  <div class="flex flex-row" style="border: solid;">
     <div
-      class="container"
-      style="flex-direction: column; height: fill; width: fill; padding: 0px; margin: 0px;"
+      class="flex flex-col"
+      style="height: fill; width: fill; padding: 0px; margin: 0px;"
     >
-      <button on:click={shufflePlayer}>shuffle</button>
+      <button class="m-0 p-0 bg-gray-300" on:click={shufflePlayer}
+        >shuffle</button
+      >
+      <!--
       <Initiative style="width: fill; padding: 0px; margin: 0px; flex: 1;">
+      -->
+      <Initiative class="flex-auto" style="margin: 0px; padding: 0px;">
         {#each players as player}
-          <div class="container" style="flex-directon: row">
+          <div class="flex flex-row mt-1 mb-1">
             <InitiativeCard style="user-select: none; flex: 1;"
               >{player.name}</InitiativeCard
             >
@@ -85,7 +83,7 @@
 
     <Board>
       {#each cards as { left, top }}
-        <Card
+        <DraggableCard
           bind:left
           bind:top
           width={cardWidth}
@@ -102,11 +100,4 @@
 </main>
 
 <style>
-  .container {
-    display: flex;
-    flex-direction: row;
-  }
-  button {
-    background-color: gray;
-  }
 </style>

@@ -3,6 +3,8 @@
     import { getMovement, getNodePos } from "./util";
 
     export let style = "";
+    let classProp = "";
+    export { classProp as class };
     export let left = null;
     export let top = null;
     export let width;
@@ -36,10 +38,8 @@
 <div
     bind:this={node}
     use:drag
-    class:draggable={true}
-    class:card={true}
+    class="draggable card {classProp}"
     style="left: {left}px; top:{top}px; width: {width}px; height: {height}px; {style}"
-    {...$$restProps}
 >
     <slot>
         <p>{left}, {top}</p>

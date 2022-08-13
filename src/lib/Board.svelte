@@ -1,7 +1,10 @@
 <script>
+    export let style = "";
+    let classProp = "";
+    export { classProp as class };
 </script>
 
-<div class="board" {...$$restProps}>
+<div class="board {classProp}" {style}>
     <slot />
 </div>
 

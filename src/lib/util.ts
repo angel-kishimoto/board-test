@@ -1,4 +1,4 @@
-export const range = (n: number): Array<number> => [...Array(n).keys()]
+export const range = (n: number): number[] => [...Array(n).keys()]
 
 export const setNodePos = (node: HTMLElement, left: number, top: number) => {
     if (left === null || left === undefined) return;
@@ -26,7 +26,7 @@ export const parseNum = (string: string): number => {
     return num;
 }
 
-export const shuffle = (array: Array<any>) => {
+export const shuffle = (array: any[]): any[] => {
     let tmp = [...array]
 
     let iMax = range(tmp.length).reverse();

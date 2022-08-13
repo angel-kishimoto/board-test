@@ -1,7 +1,10 @@
 <script>
+    export let style = "";
+    let classProp = "";
+    export { classProp as class };
 </script>
 
-<div class="initiative" {...$$restProps}>
+<div class="initiative {classProp}" {style}>
     <slot />
 </div>
 
