@@ -1,0 +1,618 @@
+[
+  {
+    "type": "攻撃カード",
+    "name": "レイガン",
+    "level": 1,
+    "fire": 1,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "レイガン",
+    "level": 1,
+    "fire": 1,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "レイガン",
+    "level": 1,
+    "fire": 1,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "レイガン",
+    "level": 1,
+    "fire": 1,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "レイガン",
+    "level": 1,
+    "fire": 2,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "レイガン",
+    "level": 1,
+    "fire": 2,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "レイガン",
+    "level": 1,
+    "fire": 2,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "レイガン",
+    "level": 1,
+    "fire": 2,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "レイガン",
+    "level": 1,
+    "fire": 3,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "レイガン",
+    "level": 1,
+    "fire": 3,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "レイガン",
+    "level": 1,
+    "fire": 3,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "レイガン",
+    "level": 1,
+    "fire": 3,
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPスクリーン",
+    "level": 1,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPスクリーン",
+    "level": 1,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPスクリーン",
+    "level": 1,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPスクリーン",
+    "level": 1,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "バズーカ",
+    "level": 3,
+    "fire": 7,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "バズーカ",
+    "level": 3,
+    "fire": 7,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "バズーカ",
+    "level": 3,
+    "fire": 8,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "バズーカ",
+    "level": 3,
+    "fire": 8,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "バズーカ",
+    "level": 3,
+    "fire": 9,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "バズーカ",
+    "level": 3,
+    "fire": 9,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "バズーカ",
+    "level": 3,
+    "fire": 10,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "バズーカ",
+    "level": 3,
+    "fire": 10,
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPブロック",
+    "level": 2,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPブロック",
+    "level": 2,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPブロック",
+    "level": 2,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPブロック",
+    "level": 2,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "ブラスター",
+    "level": 2,
+    "fire": 4,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "ブラスター",
+    "level": 2,
+    "fire": 4,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "ブラスター",
+    "level": 2,
+    "fire": 4,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "ブラスター",
+    "level": 2,
+    "fire": 5,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "ブラスター",
+    "level": 2,
+    "fire": 5,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "ブラスター",
+    "level": 2,
+    "fire": 5,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "ブラスター",
+    "level": 2,
+    "fire": 6,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "ブラスター",
+    "level": 2,
+    "fire": 6,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "ブラスター",
+    "level": 2,
+    "fire": 6,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "ビームキャノン",
+    "level": 4,
+    "fire": 12,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "ビームキャノン",
+    "level": 4,
+    "fire": 14,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "ビームキャノン",
+    "level": 4,
+    "fire": 16,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "ビームキャノン",
+    "level": 4,
+    "fire": 18,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "ビームキャノン",
+    "level": 4,
+    "fire": 20,
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPシールド",
+    "level": 3,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPシールド",
+    "level": 3,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPシールド",
+    "level": 3,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPバリア",
+    "level": 4,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPバリア",
+    "level": 4,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPバリア",
+    "level": 4,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "G弾",
+    "level": 5,
+    "fire": 25,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "G弾",
+    "level": 5,
+    "fire": 30,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "G弾",
+    "level": 5,
+    "fire": 35,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "ジオイド弾",
+    "level": 7,
+    "fire": 100,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "D弾",
+    "level": 6,
+    "fire": 40,
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "D弾",
+    "level": 6,
+    "fire": 50,
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPフィールド",
+    "level": 5,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPフィールド",
+    "level": 5,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPサイコポッド",
+    "level": 6,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "防御カード",
+    "name": "ESPサイコポッド",
+    "level": 6,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "攻撃カード",
+    "name": "光の剣",
+    "level": 5,
+    "fire": 30,
+    "description": "（同調／防御　不可）"
+  },
+  {
+    "type": "攻撃カード",
+    "name": "光の剣",
+    "level": 6,
+    "fire": 50,
+    "description": "（同調／防御　不可）"
+  },
+  {
+    "type": "攻撃カード",
+    "name": "光の剣",
+    "level": 7,
+    "fire": 100,
+    "description": "（同調／防御　不可）"
+  },
+  {
+    "type": "ワイルドカード",
+    "name": "Wild Card",
+    "level": "",
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "テレポート",
+    "level": 1,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "テレポート",
+    "level": 1,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "テレポート",
+    "level": 2,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "テレポート",
+    "level": 2,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "テレポート",
+    "level": 3,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "テレポート",
+    "level": 3,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "テレポート",
+    "level": 4,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "テレポート",
+    "level": 4,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "テレポート",
+    "level": 5,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "テレポート",
+    "level": 5,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "テレポート",
+    "level": 6,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "テレポート",
+    "level": 6,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "テレポート",
+    "level": 7,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "テレポート",
+    "level": 7,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "幻覚",
+    "level": 1,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "幻覚",
+    "level": 2,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "幻覚",
+    "level": 3,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "幻覚",
+    "level": 4,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "幻覚",
+    "level": 5,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "幻覚",
+    "level": 6,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "逃避カード",
+    "name": "幻覚",
+    "level": 7,
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "接触テレパス",
+    "name": "接触テレパス",
+    "level": "",
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "接触テレパス",
+    "name": "接触テレパス",
+    "level": "",
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "接触テレパス",
+    "name": "接触テレパス",
+    "level": "",
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "接触テレパス",
+    "name": "接触テレパス",
+    "level": "",
+    "fire": "",
+    "description": ""
+  },
+  {
+    "type": "接触テレパス",
+    "name": "接触テレパス",
+    "level": "",
+    "fire": "",
+    "description": ""
+  }
+]

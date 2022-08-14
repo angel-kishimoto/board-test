@@ -1,0 +1,110 @@
+[
+  {
+    "name": "変身可能",
+    "description": ""
+  },
+  {
+    "name": "ビームキャノン",
+    "description": ""
+  },
+  {
+    "name": "Lv.4ESPフィールド",
+    "description": ""
+  },
+  {
+    "name": "変身可能",
+    "description": ""
+  },
+  {
+    "name": "Lv.4ESPフィールド",
+    "description": ""
+  },
+  {
+    "name": "Lv.3ジャマー",
+    "description": ""
+  },
+  {
+    "name": "Lv.4ジャマー",
+    "description": ""
+  },
+  {
+    "name": "Lv.3スーツ",
+    "description": ""
+  },
+  {
+    "name": "Lv.3スーツ",
+    "description": ""
+  },
+  {
+    "name": "Lv.3スーツ",
+    "description": ""
+  },
+  {
+    "name": "Lv.4スーツ",
+    "description": ""
+  },
+  {
+    "name": "Lv.4スーツ",
+    "description": ""
+  },
+  {
+    "name": "ESPレベル＋1",
+    "description": "但し、もとからESPレベルが6以上のキャラクターには無効。"
+  },
+  {
+    "name": "ESPレベル＋1",
+    "description": "但し、もとからESPレベルが6以上のキャラクターには無効。"
+  },
+  {
+    "name": "ESPパワー＋10",
+    "description": "但し、もとから耐久力が6以上のキャラクターには無効。"
+  },
+  {
+    "name": "ESPパワー＋10",
+    "description": "但し、もとから耐久力が6以上のキャラクターには無効。"
+  },
+  {
+    "name": "耐久力＋1",
+    "description": "但し、もとから耐久力が6以上のキャラクターには無効。"
+  },
+  {
+    "name": "耐久力＋1",
+    "description": "但し、もとから耐久力が6以上のキャラクターには無効。"
+  },
+  {
+    "name": "精神力＋1",
+    "description": "但し、もとから精神力が6以上のキャラクターには無効。"
+  },
+  {
+    "name": "精神力＋1",
+    "description": "但し、もとから精神力が6以上のキャラクターには無効。"
+  },
+  {
+    "name": "手下",
+    "description": "但し、もとから手下のいるキャラクターには無効。"
+  },
+  {
+    "name": "手下",
+    "description": "但し、もとから手下のいるキャラクターには無効。"
+  },
+  {
+    "name": "船",
+    "description": "但し、もとから船(マウスを含む)を持っているキャラクターには無効。(ブラックメイデンは含まない)"
+  },
+  {
+    "name": "釈放",
+    "description": ""
+  },
+  {
+    "name": "釈放",
+    "description": ""
+  },
+  {
+    "name": "クローン",
+    "description": ""
+  },
+  {
+    "name": "クローン",
+    "description": ""
+  }
+]
