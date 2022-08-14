@@ -23,6 +23,7 @@
     "vite": "^3.0.7"
   },
   "dependencies": {
-    "skyway-js": "^4.4.5"
+    "skyway-js": "^4.4.5",
+    "yaml": "^2.1.1"
   }
 }
