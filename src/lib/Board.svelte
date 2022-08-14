@@ -1,8 +1,8 @@
 <script>
     export let style = "";
     let classProp = "";
-    export let width = 1000;
-    export let height = 800;
+    export let width;
+    export let height;
     export { classProp as class };
 </script>
 

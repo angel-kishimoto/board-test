@@ -11,7 +11,7 @@
     export let height;
 
     let node: HTMLElement;
-    let isOpen = false;
+    export let isOpen = false;
 
     // handler for flip on dbclick
     const flip = () => {
