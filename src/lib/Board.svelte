@@ -1,19 +1,14 @@
 <script>
     export let style = "";
     let classProp = "";
+    export let width = 1000;
+    export let height = 800;
     export { classProp as class };
 </script>
 
-<div class="board {classProp}" {style}>
+<div
+    class="board {classProp} border-solid relative"
+    style="border: 1px; width: {width}px; height: {height}px; {style}"
+>
     <slot />
 </div>
-
-<style>
-    .board {
-        position: relative;
-        width: 1000px;
-        height: 800px;
-        border: 1px;
-        border-style: solid;
-    }
-</style>

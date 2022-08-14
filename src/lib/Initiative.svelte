@@ -4,18 +4,6 @@
     export { classProp as class };
 </script>
 
-<div class="initiative {classProp}" {style}>
+<div class="{classProp} border-solid bg-cyan-300 items-stretch" {style}>
     <slot />
 </div>
-
-<style>
-    .initiative {
-        width: 200px;
-        border: "solid";
-        background-color: aqua;
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch center;
-    }
-</style>

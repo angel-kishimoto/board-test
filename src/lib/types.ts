@@ -1,8 +1,8 @@
-export type Player = {
+export type PlayerType = {
     name: string;
     selected: boolean;
 };
-export type Card = {
+export type CardType = {
     left: number;
     top: number;
 };

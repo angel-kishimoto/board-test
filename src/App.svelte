@@ -1,15 +1,15 @@
 <script lang="ts">
   import Board from "./lib/Board.svelte";
-  import DraggableCard from "./lib/DraggableCard.svelte";
+  import Card from "./lib/Card.svelte";
   import Initiative from "./lib/Initiative.svelte";
   import InitiativeCard from "./lib/InitiativeCard.svelte";
   import { playDiceSound } from "./lib/Sound";
-  import Switch from "./lib/Switch.svelte";
-  import type { Card, Player } from "./lib/types";
+  import Toggle from "./lib/Toggle.svelte";
+  import type { CardType, PlayerType } from "./lib/types";
   import { range, shuffle } from "./lib/util";
 
-  let players: Player[] = [];
-  let cards: Card[] = [];
+  let players: PlayerType[] = [];
+  let cards: CardType[] = [];
 
   // maybe seperate in some other file?
   const [cardWidth, cardHeight] = [100, 60];
@@ -56,23 +56,20 @@
 
 <main>
   <div class="flex flex-row" style="border: solid;">
-    <div
-      class="flex flex-col"
-      style="height: fill; width: fill; padding: 0px; margin: 0px;"
-    >
+    <div class="flex flex-col m-0 p-0">
       <button class="m-0 p-0 bg-gray-300" on:click={shufflePlayer}
         >shuffle</button
       >
       <!--
       <Initiative style="width: fill; padding: 0px; margin: 0px; flex: 1;">
       -->
-      <Initiative class="flex-auto" style="margin: 0px; padding: 0px;">
+      <Initiative class="flex flex-col flex-1 m-0 p-0 w-52">
         {#each players as player}
           <div class="flex flex-row mt-1 mb-1">
-            <InitiativeCard style="user-select: none; flex: 1;"
+            <InitiativeCard class="select-none flex-1"
               >{player.name}</InitiativeCard
             >
-            <Switch bind:checked={player.selected} />
+            <Toggle bind:checked={player.selected} />
           </div>
         {/each}
       </Initiative>
@@ -80,12 +77,12 @@
 
     <Board>
       {#each cards as { left, top }}
-        <DraggableCard
+        <Card
           bind:left
           bind:top
+          class="text-red-300"
           width={cardWidth}
           height={cardHeight}
-          style="color: red"
         />
       {/each}
     </Board>

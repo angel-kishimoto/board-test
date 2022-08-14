@@ -4,19 +4,10 @@
     export { classProp as class };
 </script>
 
-<span class="initiativeCard {classProp}" {style} disabled>
+<span
+    class="flex items-center justify-center h-20 w-full m-1 bg-yellow-200 {classProp}"
+    {style}
+    disabled
+>
     <slot />
 </span>
-
-<style>
-    .initiativeCard {
-        width: fill;
-        height: 80px;
-        background-color: darkgoldenrod;
-        margin: 3px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-</style>
