@@ -1,4 +1,5 @@
 <script lang="ts">
+  import * as YAML from "yaml";
   import Board from "./lib/Board.svelte";
   import Card from "./lib/Card.svelte";
   import Initiative from "./lib/Initiative.svelte";
@@ -9,6 +10,12 @@
   import { range, shuffle } from "./lib/util";
 
   let players: PlayerType[] = [];
+  let planetCards = [];
+  let secretBaseCards = [];
+  let combatCards = [];
+  let silhouetteCards = [];
+  let whiteCards = [];
+
   //let cards: CardType[] = [];
 
   // maybe seperate in some other file?
@@ -24,23 +31,51 @@
   type PlanetCardObject = PlanetCard & { left: number; top: number };
   let cards: PlanetCardObject[] = [];
 
-  fetch("planet_cards.json").then((res) => {
-    res.json().then((data: PlanetCard[]) => {
-      let shuffled = shuffle(data);
-      const [cols, rows] = [6, 6];
-      const [dX, dY] = [boardWidth / cols, boardHeight / rows];
-      const [offsetX, offsetY] = [(dX - cardWidth) / 2, (dY - cardHeight) / 2];
-      let tempCards = [];
+  async function fetchLockeData(filePath: string) {
+    let response = await fetch(filePath);
+    let text = await response.text();
+    return YAML.parse(text);
+  }
 
-      for (let i of range(cols * rows)) {
-        let planetcard = {
-          ...shuffled[i],
-          left: (i % 6) * dX + offsetX,
-          top: Math.floor(i / 6) * dY + offsetY,
-        };
-        tempCards.push(planetcard);
-      }
-      cards = tempCards;
+  fetchLockeData("locke_data/planet_card.yaml").then((data) => {
+    planetCards = data;
+
+    let shuffled = shuffle(planetCards);
+    const [cols, rows] = [6, 6];
+    const [dX, dY] = [boardWidth / cols, boardHeight / rows];
+    const [offsetX, offsetY] = [(dX - cardWidth) / 2, (dY - cardHeight) / 2];
+    let tempCards = [];
+
+    for (let i of range(cols * rows)) {
+      let planetcard = {
+        ...shuffled[i],
+        left: (i % 6) * dX + offsetX,
+        top: Math.floor(i / 6) * dY + offsetY,
+      };
+      tempCards.push(planetcard);
+    }
+    cards = tempCards;
+  });
+
+  fetchLockeData("locke_data/white_card.yaml").then((data) => {
+    whiteCards = data;
+  });
+
+  fetchLockeData("locke_data/combat_card.yaml").then((data) => {
+    combatCards = data;
+  });
+
+  fetchLockeData("locke_data/silhouette_card.yaml").then((data) => {
+    silhouetteCards = data;
+  });
+
+  fetchLockeData("locke_data/base_card.yaml").then((data) => {
+    secretBaseCards = data;
+  });
+
+  fetch("locke_data/planet_card.yaml").then((res) => {
+    res.text().then((text) => {
+      let data = YAML.parse(text);
     });
   });
 
@@ -94,10 +129,10 @@
         <Card
           bind:left={card.left}
           bind:top={card.top}
-          class="text-red-300 scale-50 hover:scale-100"
+          class="scale-50 hover:scale-100"
           width={cardWidth}
           height={cardHeight}
-          isOpen={true}
+          isOpen={false}
         >
           <div class="flex flex-col w-full h-full" slot="face">
             <h1 class="flex-nowrap m-1"><strong>{card.name}</strong></h1>
@@ -108,7 +143,12 @@
             </div>
           </div>
 
-          <h1 slot="back"><strong>惑星カード</strong></h1>
+          <div
+            slot="back"
+            class="flex justify-center flex-col align-middle h-full w-full bg-green-500"
+          >
+            <strong class="text-5xl">惑星カード</strong>
+          </div>
         </Card>
       {/each}
     </Board>
