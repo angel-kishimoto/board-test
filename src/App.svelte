@@ -132,15 +132,21 @@
           class="scale-50 hover:scale-100"
           width={cardWidth}
           height={cardHeight}
-          isOpen={false}
         >
-          <div class="flex flex-col w-full h-full" slot="face">
-            <h1 class="flex-nowrap m-1"><strong>{card.name}</strong></h1>
-            <div
-              class="text-[10px] whitespace-pre-wrap text-left p-2 leading-3"
-            >
-              {card.description}
-            </div>
+          <div
+            class="flex flex-col w-full h-full align-middle justify-center"
+            slot="face"
+          >
+            {#if card.description}
+              <strong class="flex-nowrap m-1 text-xl">{card.name}</strong>
+              <div
+                class="text-[10px] whitespace-pre-wrap text-left p-2 leading-3"
+              >
+                {card.description}
+              </div>
+            {:else}
+              <strong class="text-3xl">{card.name}</strong>
+            {/if}
           </div>
 
           <div
