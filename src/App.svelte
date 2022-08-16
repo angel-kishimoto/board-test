@@ -140,6 +140,9 @@
           >
             {#if card.description}
               <strong class="flex-nowrap text-[8px] p-0">{card.name}</strong>
+              {#if card.condition}
+                <div class="text-[5px] m-0 p-0 pl-1 pr-1">{card.condition}</div>
+              {/if}
               <div
                 class="text-[5px] whitespace-pre-wrap text-left p-1 leading-tight"
               >
