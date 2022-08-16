@@ -19,7 +19,7 @@
   //let cards: CardType[] = [];
 
   // maybe seperate in some other file?
-  const [cardWidth, cardHeight] = [300, 180];
+  const [cardWidth, cardHeight] = [150, 100];
   const [boardWidth, boardHeight] = [1000, 800];
 
   type PlanetCard = {
@@ -129,23 +129,24 @@
         <Card
           bind:left={card.left}
           bind:top={card.top}
-          class="scale-50 hover:scale-100"
+          class="hover:scale-150"
           width={cardWidth}
           height={cardHeight}
+          isOpen={true}
         >
           <div
             class="flex flex-col w-full h-full align-middle justify-center"
             slot="face"
           >
             {#if card.description}
-              <strong class="flex-nowrap m-1 text-xl">{card.name}</strong>
+              <strong class="flex-nowrap text-[8px] p-0">{card.name}</strong>
               <div
-                class="text-[10px] whitespace-pre-wrap text-left p-2 leading-3"
+                class="text-[5px] whitespace-pre-wrap text-left p-1 leading-tight"
               >
                 {card.description}
               </div>
             {:else}
-              <strong class="text-3xl">{card.name}</strong>
+              <strong class="text-2xl">{card.name}</strong>
             {/if}
           </div>
 
@@ -153,7 +154,7 @@
             slot="back"
             class="flex justify-center flex-col align-middle h-full w-full bg-green-500"
           >
-            <strong class="text-5xl">惑星カード</strong>
+            <strong class="text-xl">惑星カード</strong>
           </div>
         </Card>
       {/each}
