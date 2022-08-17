@@ -38,3 +38,15 @@ export const shuffle = (array: any[]): any[] => {
     }
     return tmp;
 }
+
+
+export const calcLatticePosition = (areaWidth: number, areaHeight: number, objectWidth: number, objectHeight: number, nCol: number, nRow: number) => {
+    const [dx, dy] = [areaWidth / nCol, areaHeight / nRow];
+    const [offsetX, offsetY] = [(dx - objectWidth) / 2, (dy - objectHeight) / 2];
+
+    const vertex = range(nCol).map((col) => range(nRow).map(row => [col, row])).flat();
+
+    const positions = vertex.map(([col, row]) => [Math.round(dx * col + offsetX), Math.round(dy * row + offsetY)]);
+
+    return positions;
+}

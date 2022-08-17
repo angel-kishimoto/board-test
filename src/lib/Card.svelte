@@ -12,9 +12,11 @@
 
     let node: HTMLElement;
     export let isOpen = false;
+    export let disableFlip = false;
 
     // handler for flip on dbclick
     const flip = () => {
+        if (disableFlip) return;
         isOpen = !isOpen;
     };
 
@@ -64,7 +66,9 @@
         "
     style="left: {left}px; top:{top}px; width: {width}px; height: {height}px; {style}"
 >
-    {#if isOpen}
+    {#if disableFlip}
+        <slot />
+    {:else if isOpen}
         <slot name="face">
             <p>this is face</p>
             <p>{left}, {top}</p>
